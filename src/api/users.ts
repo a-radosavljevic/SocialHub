@@ -2,7 +2,7 @@ import Ajax from '../util/ajax';
 import User from '../models/User';
 
 class Users {
-    private readonly url: string = "https://jsonplaceholder.typicode.com/users";
+    private readonly url = process.env.REACT_APP_USERS_URL;
 
     async get(id: number): Promise<User>{
         let fetchedUser = await Ajax.get(`${this.url}/${id}`);
