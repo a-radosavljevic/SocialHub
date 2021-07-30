@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
+  background: #f0f2f5;
 }
 
 .card {
@@ -18,6 +19,16 @@
 
 /* Add some padding inside the card container */
 .container {
-  padding: 2px 16px;
-  margin: 10px 10px 10px 10px;
+  padding: 20px;
+}
+
+.heading {
+  font-size: 50px;
+  color: #0d6efd;
+}
+
+@media only screen and (max-width: 768px) {
+  .box {
+    height: 50vh;
+  }
 }
